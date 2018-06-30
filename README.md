@@ -13,4 +13,11 @@ For the preconditioner we use a tridiagonal matrix that we can efficiently inver
 
 I developed this code for my Bachelor thesis but did not look at it since then. It still seems to compile though. Maybe someone has a use for it.
 
-
+## Directory structure
+    ├── README.md
+    ├── cublas_wrapper.h          # wrapper functions around some cublas functions
+    ├── makefile
+    ├── misc.h                    # some small helper functions
+    ├── preconditioner.h          # Cuda kernels that solve solve the linear system for the preconditioner
+    ├── solver.h                  # functions that apply the preconditioned conjugate gradient to solve the problem
+    └── test.cu                   # demonstrates how to use the given code and runs tests for the different implementations.
